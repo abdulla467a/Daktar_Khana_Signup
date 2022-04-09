@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".SignupActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/saff" />
+
+
+    <EditText
+        android:id="@+id/edittext_name"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="00dp"
+        android:background="#ff0000"
+        android:textColor="#FFFFFF"
+        android:hint="@string/name"/>
+
+    <EditText
+        android:id="@+id/edittext_date"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="#ff0000"
+        android:textColor="#FFFFFF"
+        android:hint="@string/date_of_birth" />
+
+    <EditText
+        android:id="@+id/edittext_gender"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="#ff0000"
+        android:textColor="#FFFFFF"
+        android:hint="@string/gender" />
+    <EditText
+        android:id="@+id/edittext_phone_no"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="#ff0000"
+        android:textColor="#FFFFFF"
+        android:hint="@string/phone_no" />
+
+    <EditText
+        android:id="@+id/edittext_pass"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="#ff0000"
+        android:drawableLeft="@drawable/pass"
+        android:hint="@string/password"
+        />
+    <EditText
+        android:id="@+id/edittext_confirm_pass"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="#ff0000"
+        android:drawableLeft="@drawable/pass"
+        android:hint="@string/confirm_password"
+        />
+    <Button
+        android:id="@+id/button_create_account"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="#ff0000"
+        android:hint="@string/create_account"/>
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="@string/have_account"/>
+
+        <TextView
+            android:id="@+id/textview_login"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:paddingLeft="10dp"
+            android:textStyle="bold"
+            android:textColor="#ff0000"
+            android:text="Login"/>
+
+</android.support.v7.widget.LinearLayoutCompat>
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".PatLogin"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:layout_marginTop="50dp"
+        app:srcCompat="@drawable/saff" />
+
+
+    <EditText
+        android:id="@+id/edittext_username"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="#ff0000"
+        android:drawableLeft="@drawable/user2"
+        android:hint="@string/Username"
+        android:textColor="#ffffff"
+        android:textColorHighlight="#004B1B1B" />
+
+    <EditText
+        android:id="@+id/edittext_pass"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="#ff0000"
+        android:drawableLeft="@drawable/pass"
+        android:hint="@string/password"
+        />
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="#ff0000"
+        android:text="@string/login"/>
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="@string/not_registered"/>
+
+        <TextView
+            android:id="@+id/textview_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:paddingLeft="10dp"
+            android:textStyle="bold"
+            android:textColor="#ff0000"
+            android:text="@string/sign_up"/>
+    </android.support.v7.widget.LinearLayoutCompat>
+
+</LinearLayout>
+
